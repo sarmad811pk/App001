@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Schedule Manager";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+
+
+
+<h2 class="col-sm-11" style="margin: 0px;padding: 0px;">Schedule Management</h2>
+
+<style>
+    .table-hover tbody tr{cursor:pointer;}
+</style>
+<table class="table table-striped table-hover">
+    <thead>
+      <tr class="small">
+        <th>Title</th>
+        <th>Occurence</th>
+        <th>Start Date</th>
+        <th>Assignement Reminder</th>
+        <th>End Date</th>
+        <th>Completion Reminder</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input class="form-control" type="text" placeholder="Schedule Title"/></td>
+        <td><select class="form-control" id=""><option>Once in Start</option><option>Once in End</option><option>Once at Start and End</option><option>Weekly</option><option>Quaterly</option></select></td>
+        <td><input class="form-control" type="date" /></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><input class="form-control" type="date" /></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><button class="btn btn-info col-sm-12"> Add </button></td>
+      </tr>
+      <tr>
+        <td><input class="form-control" type="text" placeholder="Schedule Title" value="Temp Schedule 1"/></td>
+        <td><select class="form-control" id=""><option>Once in Start</option><option>Once in End</option><option>Once at Start and End</option><option selected>Weekly</optionselected><option>Quaterly</option></select></td>
+        <td><input class="form-control" type="date" value="2015-01-01" /></td>
+        <td><select class="form-control"><option>Yes</option><option selected>No</option></select></td>
+        <td><input class="form-control" type="date"  value="2018-01-01"/></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><button class="btn btn-default">Save</button></td>
+      </tr>      
+      <tr>
+        <td><input class="form-control" type="text" placeholder="Schedule Title" value="Temp Schedule 2"/></td>
+        <td><select class="form-control" id=""><option>Once in Start</option><option>Once in End</option><option>Once at Start and End</option><option>Weekly</option><option>Quaterly</option></select></td>
+        <td><input class="form-control" type="date" value="2015-01-01" /></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><input class="form-control" type="date"  value="2018-01-01"/></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><button class="btn btn-default">Save</button></td>
+      </tr>
+      <tr>
+        <td><input class="form-control" type="text" placeholder="Schedule Title" value="Temp Schedule 3"/></td>
+        <td><select class="form-control" id=""><option>Once in Start</option><option>Once in End</option><option selected>Once at Start and End</optionselected><option>Weekly</option><option>Quaterly</option></select></td>
+        <td><input class="form-control" type="date" value="2015-01-01" /></td>
+        <td><select class="form-control"><option>Yes</option><option selected>No</option></select></td>
+        <td><input class="form-control" type="date"  value="2018-01-01"/></td>
+        <td><select class="form-control"><option>Yes</option><option>No</option></select></td>
+        <td><button class="btn btn-default">Save</button></td>
+      </tr>    
+    </tbody>
+  </table>
+
